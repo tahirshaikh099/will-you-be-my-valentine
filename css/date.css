@@ -1,21 +1,37 @@
 body {
   text-align: center;
-  margin-top: 30px;
   font-family: "Courier";
   background-color: #fff5e4;
   color: #ff9494;
+  
+  /* Centering the entire form on the screen */
+  margin: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center;     /* Centers horizontally */
+  overflow: hidden;        /* Removes scrollbars */
 }
+
 h1 {
-  font-size: 40px;
+  font-size: 5vh;          /* Responsive size based on height */
+  margin: 2vh 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;                /* Adds consistent vertical space between elements */
 }
 
 form .header {
   width: 100%;
   display: flex;
-  font-size: 20px;
-  margin-bottom: 20px;
+  justify-content: center;
+  font-size: 3vh;
+  margin-bottom: 1vh;
   color: #ff9494;
 }
 
@@ -23,16 +39,15 @@ form .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 25px;
+  font-size: 3.5vh;
 }
 
-.button {
-  padding: 6px 10px;
-  font-size: 15px;
+.button, input[type="date"] {
+  padding: 1.5vh 2.5vh;    /* Responsive padding */
+  font-size: 2vh;          /* Responsive font */
   cursor: pointer;
-  margin: 10px;
+  margin: 1vh;
   font-family: "courier";
-  margin-bottom: 10px;
   background-color: #ffe3e1;
   color: #e67373;
   border-radius: 12px;
@@ -44,17 +59,4 @@ form .header {
   background-color: #ff9494;
   color: #ffe3e1;
   border: 2px solid #ff9494;
-}
-
-input[type="date"] {
-  padding: 6px 10px;
-  font-size: 15px;
-  cursor: pointer;
-  margin: 10px;
-  font-family: "courier";
-  margin-bottom: 10px;
-  background-color: #ffe3e1;
-  color: #e67373;
-  border-radius: 12px;
-  border: 2px solid #ffe3e1;
 }
