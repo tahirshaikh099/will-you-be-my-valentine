@@ -1,43 +1,24 @@
 body {
   text-align: center;
+  margin-top: 30px;
   font-family: "Courier";
   background-color: #fff5e4;
   color: #ff9494;
-
-  /* Centering logic */
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centers content vertically */
-  align-items: center;     /* Centers content horizontally */
-  overflow: hidden;        /* Prevents accidental scrollbars */
 }
-
 #thankyou {
-  font-size: 8vh;          /* Responsive text size */
-  margin-bottom: 2vh;
-  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
-
 .rizz {
-  margin-bottom: 4vh;
-  font-size: 3vh;          /* Keeps your rizz text readable but compact */
+  margin-bottom: 10 px;
 }
-
-/* If your rizz is an image, use this to keep it within bounds */
-.rizz img {
-  max-height: 40vh;
-  width: auto;
-  border-radius: 20px;
-}
-
 .button {
-  padding: 1.5vh 3vh;
-  font-size: 2.2vh;
+  padding: 10px 20px;
+  font-size: 18px;
   cursor: pointer;
-  margin: 1vh;
+  margin: 10px;
   font-family: "courier";
+  margin-bottom: 20px;
   background-color: #ffe3e1;
   color: #e67373;
   border-radius: 12px;
