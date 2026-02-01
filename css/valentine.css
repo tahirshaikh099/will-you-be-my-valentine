@@ -1,28 +1,44 @@
 body {
   text-align: center;
-  margin-top: 30px;
   font-family: "Courier";
   background-color: #fff5e4;
   color: #ff9494;
-}
 
-img {
-  height: 400px;
-  width: auto;
-  padding: 10px;
+  /* Centering everything perfectly on one screen */
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 #valentineQuestion {
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-size: 6vh;          /* Responsive heading */
+  margin-bottom: 2vh;
+  font-weight: bold;
 }
+
+img {
+  height: 40vh;            /* Restricts image to 40% of screen height */
+  width: auto;
+  padding: 10px;
+  object-fit: contain;     /* Ensures image doesn't distort */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 2vh;
+}
+
 .answerButton {
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 1.5vh 3vh;
+  font-size: 2.2vh;
   cursor: pointer;
-  margin: 10px;
   font-family: "courier";
-  margin-bottom: 20px;
   background-color: #ffe3e1;
   color: #e67373;
   border-radius: 12px;
