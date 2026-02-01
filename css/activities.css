@@ -1,38 +1,52 @@
 body {
   text-align: center;
-  margin-top: 30px;
   font-family: "Courier";
   background-color: #fff5e4;
   color: #ff9494;
+  
+  /* Critical changes for "No Scroll" */
+  margin: 0;
+  height: 100vh;           /* Sets height to exactly the screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;     /* Centers content horizontally */
+  overflow: hidden;        /* Prevents accidental scrollbars */
 }
+
 #activityquestion {
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 5vh;          /* Scales font based on screen height */
+  margin-bottom: 2vh;
 }
+
 .activity-item {
   display: inline-block;
-  margin: 10px;
+  margin: 1vh;
   vertical-align: top;
   color: #ff9494;
 }
+
 .activity-item img {
-  height: 200px;
-  width: 200px;
+  height: 25vh;            /* Image scales with screen height */
+  width: 25vh;             /* Keep width same as height for circle */
   border-radius: 50%;
   border: 5px solid #ff9494;
   object-fit: cover;
-  padding: 10px;
+  padding: 5px;
 }
+
 .activity-item label {
   display: block;
+  font-size: 2vh;
+  margin-top: 5px;
 }
+
 .button {
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 1.5vh 3vh;
+  font-size: 2vh;
   cursor: pointer;
-  margin: 10px;
+  margin: 2vh 10px;
   font-family: "courier";
-  margin-bottom: 20px;
   background-color: #ffe3e1;
   color: #e67373;
   border-radius: 12px;
